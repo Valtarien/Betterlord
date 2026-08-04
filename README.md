@@ -1,5 +1,12 @@
 # Betterlord
 
+## Summary
+Betterlord is a curated Bannerlord modlist built on one rule: a mod earns its place by having no open incident against it, or a specifically verified fix if it once had one. Popularity and feature richness don't override that bar — several well-regarded mods are absent here because their update cadence, patch-conflict history, or unresolved bug reports didn't clear it as of this list's last audit.
+
+Targets Bannerlord v1.4.7 (build 117484) with the War Sails 1.2.7 DLC, runs through Novus Bannerlord Launcher, and ships as a version-1.4.7.1.0 preset: 112 third-party mods plus the seven official modules, load-ordered and MCM-configured end to end. It began as a stability-focused fork of an earlier personal list and is maintained independently from here — its own incident history, its own module decisions, its own audits going forward.
+
+---
+
 *A curated Mount & Blade II: Bannerlord modlist by Valtarien (ACE). Version 1.4.7.1.0.*
 
 Built for **v1.4.7 (build 117484)** with the **War Sails 1.2.7** DLC.
