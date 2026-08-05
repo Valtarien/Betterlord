@@ -16,7 +16,7 @@ Stability first. A mod earns inclusion by clearing one bar: no open incident rep
 
 ## Maintenance
 
-Betterlord began as a stability-focused fork of Valorlord, which is itself an independent derivative of the [Vanilla 1.4.7 Plus Modding Notes](https://www.nexusmods.com/mountandblade2bannerlord/mods/11354) by [TadasTheLithuanian](https://www.nexusmods.com/mountandblade2bannerlord/users/5067065) and is maintained independently from here onwards. Each decision — incident history, module choices, audits — stands on its own terms.
+Betterlord began as a stability-focused fork of Valorlord and is maintained independently from here forward. Each decision — incident history, module choices, audits — stands on its own terms.
 
 ---
 
@@ -369,6 +369,11 @@ Every setting below is applied through the **Mod Configuration Menu**, reachable
 - Defaults are fine to start — the mod adds casualty-based retreat, army disbandment and cohesion loss on failed sieges. Fight one siege as attacker and one as defender before adjusting anything.
 - It spawns cover and replacement ladders into siege scenes at runtime — if another mod alters siege scene props, watch for misplaced geometry during the wall-breach phase.
 
+**Realistic Combat Mod**
+- Configuration via `rcm_config.xml` in the mod folder, not via MCM — no in-game settings. Defaults are production-ready; only edit the config file if you want to adjust material damage values, thresholds, or multipliers.
+- The mod auto-detects all armor materials at runtime and is compatible with any armor mod, including modded armor. No XML patches needed.
+- v1.0.4 (04 Aug 2026) fixes the gambeson material classification (now properly detected as quilted armor, not plain cloth).
+
 ### Crafting
 
 **Visible Smithing Stamina While Waiting**
@@ -587,6 +592,12 @@ Betterlord does not yet have its own in-campaign scan baseline — run one after
   - **Improved Economy For AI Lords' "Enable Towns Denars Increase" resolved, not just flagged.** Its disabled state existed only to defer to Harvest And Production, which isn't part of Betterlord. No other mod claims this system, and the setting's own default is enabled. Committed to enabling it rather than leaving it as an open question — this list's own principle (assume defaults when a stated reason no longer applies) requires a decision, not a caveat.
   - Diplomacy's standalone reconfiguration (previous session) re-verified against this same principle — already correct as written, no further change.
   - No other stale ownership rationale found. Every other cross-mod reference in §6 either points to a mod that's present and still accurate, or belongs to a mod that's excluded from Betterlord entirely (making the question moot rather than open).
+
+### 2026-08-05 — Mod Version Updates
+
+- **Siege Engines Extended** updated to v1.1. Modular destructible covers on siege towers and battering rams, new siege tower variants with modular destruction states, ballista/mangonel/trebuchet refinements (improved HP, destruction states, ammo), night-time torch spawning on siege structures. No MCM configuration. Author notes potential FPS impact on night scenes with many siege structures and effects (not a defect in this mod, attributed to increased particles and objects); incompatible with EpicSieges and Empire of Europe mods.
+- **Realistic Combat Mod** updated to v1.3.6 (per Files tab — authoritative source for actual downloadable versions). Auto-compatible with any armor mod; no XML patches required. Configuration via `rcm_config.xml` in mod folder, not MCM. Added configuration note to [§6](#6-mod-configuration).
+- Both mods verified zero incidents or conflicts with Betterlord's current base configuration.
 
 ---
 
