@@ -16,7 +16,7 @@ Stability first. A mod earns inclusion by clearing one bar: no open incident rep
 
 ## Maintenance
 
-Betterlord began as a stability-focused fork of Valorlord and is maintained independently from here forward. Each decision — incident history, module choices, audits — stands on its own terms.
+Betterlord began as a stability-focused fork of Valorlord, which is itself an independent derivative of the [Vanilla 1.4.7 Plus Modding Notes](https://www.nexusmods.com/mountandblade2bannerlord/mods/11354) by [TadasTheLithuanian](https://www.nexusmods.com/mountandblade2bannerlord/users/5067065) and is maintained independently from here onwards. Each decision — incident history, module choices, audits — stands on its own terms.
 
 ---
 
