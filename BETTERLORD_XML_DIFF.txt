@@ -1,0 +1,22 @@
+Betterlord.xml — Version Corrections Applied
+=============================================
+
+CHANGE 1 — Line 82 (Organized Frontline Mod)
+─────────────────────────────────────────────
+- <PresetModule Id="FrontlineMod" RequiredVersion="v1.1.9" URL="" />
++ <PresetModule Id="FrontlineMod" RequiredVersion="v1.2.7" URL="" />
+
+CHANGE 2 — Lines 75–76 (RTS Camera, both components)
+─────────────────────────────────────────────────────
+- <PresetModule Id="RTSCamera" RequiredVersion="v5.3.25" URL="" />
+- <PresetModule Id="RTSCamera.CommandSystem" RequiredVersion="v5.3.25" URL="" />
++ <PresetModule Id="RTSCamera" RequiredVersion="v5.4.15" URL="" />
++ <PresetModule Id="RTSCamera.CommandSystem" RequiredVersion="v5.4.15" URL="" />
+
+CHANGE 3 — Line 94 (Realistic Combat Mod)
+──────────────────────────────────────────
+- <PresetModule Id="RCM" RequiredVersion="v1.3.6" URL="" />
++ <PresetModule Id="RCM" RequiredVersion="v1.3.7" URL="" />
+
+All other entries unchanged. Module count: 124 (7 official + 112 third-party + 5 dividers).
+Load order preserved. Stability bar maintained.

@@ -1,0 +1,65 @@
+Betterlord.md — Configuration and Changelog Updates
+====================================================
+
+CHANGE 1 — §6 Mod Configuration, Realistic Combat Mod (lines 372–375)
+──────────────────────────────────────────────────────────────────────
+
+BEFORE:
+───────
+**Realistic Combat Mod**
+- Configuration via `rcm_config.xml` in the mod folder, not via MCM — no in-game settings. Defaults are production-ready; only edit the config file if you want to adjust material damage values, thresholds, or multipliers.
+- The mod auto-detects all armor materials at runtime and is compatible with any armor mod, including modded armor. No XML patches needed.
+- v1.0.4 (04 Aug 2026) fixes the gambeson material classification (now properly detected as quilted armor, not plain cloth).
+
+AFTER:
+──────
+**Realistic Combat Mod**
+- Configuration via `rcm_config.xml` in the mod folder, not via MCM — no in-game settings. Defaults are production-ready; only edit the config file if you want to adjust material damage values, thresholds, or multipliers.
+- The mod auto-detects all armor materials at runtime and is compatible with any armor mod, including modded armor. No XML patches needed.
+- v1.3.7 (current) includes material-based armor system, concussive trauma, weapon deflection on hard armor, and blunt face knockouts. Earlier versions (v1.0.4) fixed gambeson material classification (now properly detected as quilted armor, not plain cloth).
+
+RATIONALE:
+──────────
+• Updates version reference from stale v1.0.4 to current v1.3.7
+• Adds enumeration of key systems (material-based armor, concussive trauma, deflection, knockouts)
+• Preserves historical context about v1.0.4 fix for users tracking version progression
+• Maintains configuration method note (rcm_config.xml, no MCM)
+
+
+CHANGE 2 — §11 Changelog, 2026-08-05 Entry (lines 596–600)
+───────────────────────────────────────────────────────────
+
+BEFORE:
+───────
+### 2026-08-05 — Mod Version Updates
+
+- **Siege Engines Extended** updated to v1.1. Modular destructible covers on siege towers and battering rams, new siege tower variants with modular destruction states, ballista/mangonel/trebuchet refinements (improved HP, destruction states, ammo), night-time torch spawning on siege structures. No MCM configuration. Author notes potential FPS impact on night scenes with many siege structures and effects (not a defect in this mod, attributed to increased particles and objects); incompatible with EpicSieges and Empire of Europe mods.
+- **Realistic Combat Mod** updated to v1.3.6 (per Files tab — authoritative source for actual downloadable versions). Auto-compatible with any armor mod; no XML patches required. Configuration via `rcm_config.xml` in mod folder, not MCM. Added configuration note to [§6](#6-mod-configuration).
+- Both mods verified zero incidents or conflicts with Betterlord's current base configuration.
+
+
+AFTER:
+──────
+### 2026-08-05 — Mod Version Updates
+
+- **Siege Engines Extended** updated to v1.1. Modular destructible covers on siege towers and battering rams, new siege tower variants with modular destruction states, ballista/mangonel/trebuchet refinements (improved HP, destruction states, ammo), night-time torch spawning on siege structures. No MCM configuration. Author notes potential FPS impact on night scenes with many siege structures and effects (not a defect in this mod, attributed to increased particles and objects); incompatible with EpicSieges and Empire of Europe mods.
+- **Organized Frontline Mod** updated to v1.2.7 (per author changelog and files tab). No incidents or conflicts reported.
+- **RTS Camera** (both components) updated to v5.4.15 (per author files tab). No incidents or conflicts reported.
+- **Realistic Combat Mod** updated to v1.3.7 (per author changelog and files tab). Auto-compatible with any armor mod; no XML patches required. Configuration via `rcm_config.xml` in mod folder, not MCM. Added configuration note to [§6](#6-mod-configuration).
+- All three mods verified zero incidents or conflicts with Betterlord's current base configuration.
+
+RATIONALE:
+──────────
+• Separates three mods into individual changelog entries (Organized Frontline, RTS Camera, RCM)
+• Corrects RCM version from v1.3.6 to v1.3.7
+• Adds Organized Frontline Mod v1.2.7 with incident/conflict status
+• Adds RTS Camera v5.4.15 with component pairing note
+• Clarifies all three use author changelog/files tab as source (vs. Nexus page HTML)
+• Updates conclusion to reflect all three mods verified for consistency and stability
+• Maintains narrative voice and consistency with prior changelog entries
+
+---
+
+Total changes: 5 sections modified
+Files affected: Betterlord.md only (2 sections)
+No structural changes. All existing text preserved where unmodified.
