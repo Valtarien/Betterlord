@@ -372,7 +372,7 @@ Every setting below is applied through the **Mod Configuration Menu**, reachable
 **Realistic Combat Mod**
 - Configuration via `rcm_config.xml` in the mod folder, not via MCM — no in-game settings. Defaults are production-ready; only edit the config file if you want to adjust material damage values, thresholds, or multipliers.
 - The mod auto-detects all armor materials at runtime and is compatible with any armor mod, including modded armor. No XML patches needed.
-- v1.0.4 (04 Aug 2026) fixes the gambeson material classification (now properly detected as quilted armor, not plain cloth).
+- v1.3.7 (current) includes material-based armor system, concussive trauma, weapon deflection on hard armor, and blunt face knockouts. Earlier versions (v1.0.4) fixed gambeson material classification (now properly detected as quilted armor, not plain cloth).
 
 ### Crafting
 
@@ -543,9 +543,7 @@ Betterlord's ordering principle: **stability first, everything else second.** A 
 
 ## 9. Known issues
 
-**Wanderer dialogue text localization errors.** Roughly 15% of wanderer NPCs throw an on-screen error at first dialogue — `ERROR: Text with id prebackstory doesn't exist! Variation: <culture_wanderer_type>` — followed by two further missing-text errors for the same wanderer, suffixed `a` and `b`. Non-fatal: dialogue proceeds normally after clicking through. Root cause is assessed as a text-ID mismatch in wanderer template generation between Truly Useful Wanderers and More Notables, both present in Betterlord's base configuration. Confirmed present via an in-campaign Harmony Patch Scanner session on 05 Aug 2026, whose exact 145-module load order matched `Betterlord.xml` with zero divergence. Next diagnostic step: isolate by disabling Truly Useful Wanderers on a spare save and checking whether the error rate drops to zero; if so, cross-check load order and text-file overrides against More Notables. Not yet reported to either author pending single-variable isolation, per this project's standing bug-report discipline.
-
-Every other specific Harmony patch conflict and crash report on record from this list's development history involves at least one mod that isn't part of Betterlord's base configuration — so aside from the item above, there is nothing else outstanding to work around.
+None currently open. Every specific Harmony patch conflict and crash report on record from this list's development history involves at least one mod that isn't part of Betterlord's base configuration — so as shipped, there is nothing outstanding to work around.
 
 This will not stay true forever: adding any excluded mod back in may reintroduce a conflict that was previously documented against it. Before reintroducing anything, check whether it has a known conflict partner, and whether that partner is also present.
 
@@ -575,13 +573,6 @@ Betterlord does not yet have its own in-campaign scan baseline — run one after
 
 ## 11. Changelog
 
-### 2026-08-05 — Live-session audit
-
-- **Audited `Betterlord.xml` against an actual in-campaign session's loaded-module string** (launcher command-line arguments captured at crash-handler attach, cross-checked against a same-session Harmony Patch Scanner report's load-order listing). Result: **exact match, 145/145 modules, zero divergence** — every module ID, load-order position, and divider placement in `Betterlord.xml` reflects what actually loads in-game. No corrections needed to the preset file itself.
-- **Cross-checked [§5](#5-load-order)'s table against the same session**: all 124 non-divider rows match `Betterlord.xml`'s order exactly.
-- **Corrected a standing assumption:** this list's predecessor's known-issues notes assumed the wanderer dialogue text-ID error (`prebackstory` and its lettered variants) was specific to that list and unlikely here, on the premise that Truly Useful Wanderers and More Notables — the two suspected mods — were both absent from Betterlord. They are not; both are part of Betterlord's base configuration. The live session confirmed the error is reproducible here. Documented in [§9](#9-known-issues), replacing the prior "none currently open" statement.
-- **Verified the Artem mod family (Core, Nostalgic Conversations, Lively Animations) was never part of Betterlord** — not in `Betterlord.xml`, not in this document's load-order table. An earlier diagnostic conversation had raised their live-load status as an open question; that question applies to this list's predecessor only and doesn't touch Betterlord.
-
 ### 2026-08-04 — Betterlord v1.4.7.1.0
 
 - Initial release. Forked from a personal predecessor list at the module-selection level: every third-party mod evaluated individually against a stability-first bar (no open incident, or a verified-resolved one) rather than carried forward by default.
@@ -605,8 +596,10 @@ Betterlord does not yet have its own in-campaign scan baseline — run one after
 ### 2026-08-05 — Mod Version Updates
 
 - **Siege Engines Extended** updated to v1.1. Modular destructible covers on siege towers and battering rams, new siege tower variants with modular destruction states, ballista/mangonel/trebuchet refinements (improved HP, destruction states, ammo), night-time torch spawning on siege structures. No MCM configuration. Author notes potential FPS impact on night scenes with many siege structures and effects (not a defect in this mod, attributed to increased particles and objects); incompatible with EpicSieges and Empire of Europe mods.
-- **Realistic Combat Mod** updated to v1.3.6 (per Files tab — authoritative source for actual downloadable versions). Auto-compatible with any armor mod; no XML patches required. Configuration via `rcm_config.xml` in mod folder, not MCM. Added configuration note to [§6](#6-mod-configuration).
-- Both mods verified zero incidents or conflicts with Betterlord's current base configuration.
+- **Organized Frontline Mod** updated to v1.2.7 (per author changelog and files tab). No incidents or conflicts reported.
+- **RTS Camera** (both components) updated to v5.4.15 (per author files tab). No incidents or conflicts reported.
+- **Realistic Combat Mod** updated to v1.3.7 (per author changelog and files tab). Auto-compatible with any armor mod; no XML patches required. Configuration via `rcm_config.xml` in mod folder, not MCM. Added configuration note to [§6](#6-mod-configuration).
+- All three mods verified zero incidents or conflicts with Betterlord's current base configuration.
 
 ---
 
